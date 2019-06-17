@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+
+	<center><h1>Basic Form</h1></center>
+	<hr>
+	<form>
+		
+		<fieldset>
+			<legend>Your Personal Details</legend>
+			<label>First Name: <input type="text" name="fname" placeholder='First Name' required></label><br><br>
+			<label>Last Name: <input type="text" name="lname" placeholder="Last Name" required></label><br><br>
+			<label>Gender: <input type="radio" name="gender" value="Male" checked>Male
+						   <input type="radio" name="gender" value="Female">Female
+						   <input type="radio" name="gender" value="Transgender">Transgender
+			</label><br><br>
+			<label>Date of Birth: <input type="date" name="dob" required></label>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Communication Details</legend>
+			<label>Address: <textarea rows=5 cols=20 placeholder="Your complete address" required></textarea></label><br><br>
+			<label>Contact #: <input type="tel" pattern="[0-9]{10}" placeholder="Mobile number" name="contact" required></label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Other Details</legend>
+			<label>Your Annual Income: 
+				<select name="income">
+					<option value="slab1" selected>0 - 5 L</option>	
+					<option value="slab2">5 - 15 L</option>
+					<option value="slab3">15 - 30 L</option>
+					<option value="slab4">30 - 50 L</option>
+					<option value="slab5">Above 50 L</option>
+				</select>
+			</label><br><br>
+			<label>Vehicle Type Owned:
+				<input type="checkbox" name="vehicle" value="none" required>None
+				<input type="checkbox" name="vehicle" value="2w">2 Wheeler
+				<input type="checkbox" name="vehicle" value="4w">4 Wheeler
+			</label>
+		</fieldset>
+
+		<br><br>
+
+		<center><button>Submit</button></center>
+
+	</form>
+
+	<div style="margin-top: 15%;">
+		<hr>
+		<center><em>Developed By: </em><b>Rohit Gupta</b></center>
+	</div>
+
+</body>
+</html>
